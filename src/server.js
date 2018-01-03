@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 
 //Declarations
 const app = express();
+app.disable('etag').disable('x-powered-by');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
